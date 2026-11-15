@@ -16,112 +16,97 @@
 
 <body>
 
+    <!-- PAGE LOADER -->
+    <div class="page-loader" id="page-loader">
+        <div class="loader-logo">CRAV<span>ORA</span></div>
+        <div class="loader-spinner"></div>
+        <p class="loader-text">PREPARING YOUR EXPERIENCE...</p>
+    </div>
+
     <div class="app-layout">
 
         <!-- SIDEBAR -->
         <aside class="sidebar">
-
             <div class="logo">Cravora<span>.</span></div>
 
             <p class="sidebar-label">MENU</p>
 
             <nav class="sidebar-nav">
-
-                <a href="#home" class="nav-link active">
-                    <span>⌂</span> Explore
-                </a>
-
-                <a href="#categories" class="nav-link">
-                    <span>▦</span> Categories
-                </a>
-
-                <a href="#restaurants" class="nav-link">
-                    <span>♨</span> Restaurants
-                </a>
-
-                <a href="#restaurants" class="nav-link">
-                    <span>♡</span> Favourites
-                </a>
-
-                <a href="#track-order" class="nav-link">
-                    <span>📦</span> Track Order
-                </a>
-
+                <a href="#home" class="nav-link active"><span>⌂</span> Explore</a>
+                <a href="#categories" class="nav-link"><span>▦</span> Categories</a>
+                <a href="#restaurants" class="nav-link"><span>♨</span> Restaurants</a>
+                <a href="#restaurants" class="nav-link" id="favorites-link"><span>♡</span> Favourites</a>
+                <a href="#track-order" class="nav-link"><span>📦</span> Track Order</a>
             </nav>
 
             <div class="sidebar-bottom">
-
                 <div class="sidebar-promo">
                     <span>🍽️</span>
                     <h3>Good food starts here.</h3>
                     <p>Discover something delicious today.</p>
                 </div>
-
                 <p class="sidebar-footer">© 2026 Cravora</p>
-
             </div>
-
         </aside>
+
+        <!-- MOBILE BOTTOM NAVIGATION -->
+        <nav class="mobile-bottom-nav">
+            <a href="#home" class="mobile-nav-link active">
+                <span>⌂</span>
+                <small>Explore</small>
+            </a>
+
+            <a href="#categories" class="mobile-nav-link">
+                <span>▦</span>
+                <small>Categories</small>
+            </a>
+
+            <a href="#restaurants" class="mobile-nav-link">
+                <span>♨</span>
+                <small>Restaurants</small>
+            </a>
+
+            <a href="#track-order" class="mobile-nav-link">
+                <span>📦</span>
+                <small>Orders</small>
+            </a>
+        </nav>
 
         <!-- MAIN CONTENT -->
         <main class="main-content">
 
-            <!-- TOP BAR -->
+            <!-- TOPBAR -->
             <header class="topbar" id="home">
-
                 <div class="welcome-text">
                     <p class="topbar-date">YOUR FOOD DISCOVERY SPACE</p>
                     <h2>Explore delicious food <span>👋</span></h2>
                 </div>
 
                 <div class="topbar-actions">
-
                     <div class="search-box">
                         <span class="search-icon">⌕</span>
-
-                        <input
-                            type="text"
-                            id="restaurant-search"
-                            placeholder="Search food or restaurants..."
-                        >
-
-                        <button id="search-button">Search</button>
+                        <input type="search" id="restaurant-search" placeholder="Search food or restaurants...">
+                        <button type="button" id="search-button">Search</button>
                     </div>
 
-                    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
-                        🌙
-                    </button>
+                    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">🌙</button>
 
                     <button class="cart-btn" id="cart-button">
-                        🛒 Cart
-                        <span id="cart-count">0</span>
+                        🛒 Cart <span id="cart-count">0</span>
                     </button>
-
                 </div>
-
             </header>
 
-            <!-- HERO BANNER -->
+            <!-- HERO SECTION -->
             <section class="hero">
-
                 <div class="hero-content">
-
                     <p class="eyebrow">GOOD FOOD, GOOD MOOD</p>
-
-                    <h1>
-                        Discover food<br>
-                        that makes you <span>happy.</span>
-                    </h1>
-
+                    <h1>Discover food<br>that makes you <span>happy.</span></h1>
                     <p>
-                        Explore amazing restaurants, discover new flavours
-                        and find your next favourite meal with Cravora.
+                        Explore amazing restaurants, discover new flavours and find your next favourite meal with
+                        Cravora.
                     </p>
-
-                    <a href="#restaurants" class="hero-btn">
-                        Explore Restaurants →
-                    </a>
-
+                    <a href="#restaurants" class="hero-btn">Explore Restaurants →</a>
                 </div>
 
                 <div class="hero-decoration">
@@ -130,12 +115,10 @@
                     <span class="floating-food food-two">🍰</span>
                     <span class="floating-food food-three">🍜</span>
                 </div>
-
             </section>
 
-            <!-- CATEGORIES -->
+            <!-- CATEGORIES SECTION -->
             <section class="categories" id="categories">
-
                 <div class="section-heading">
                     <div>
                         <p class="section-tag">FIND YOUR FAVOURITE</p>
@@ -145,44 +128,40 @@
                 </div>
 
                 <div class="category-grid">
-
-                    <div class="category-card">
+                    <div class="category-card" data-category="pizza">
                         <div class="category-icon">🍕</div>
                         <h3>Pizza</h3>
                         <p>Cheesy goodness</p>
                     </div>
 
-                    <div class="category-card">
+                    <div class="category-card" data-category="burgers">
                         <div class="category-icon">🍔</div>
                         <h3>Burgers</h3>
                         <p>Big bites, big flavour</p>
                     </div>
 
-                    <div class="category-card">
+                    <div class="category-card" data-category="biryani">
                         <div class="category-icon">🍛</div>
                         <h3>Biryani</h3>
                         <p>Rich and aromatic</p>
                     </div>
 
-                    <div class="category-card">
+                    <div class="category-card" data-category="chinese">
                         <div class="category-icon">🍜</div>
                         <h3>Chinese</h3>
                         <p>Delicious oriental food</p>
                     </div>
 
-                    <div class="category-card">
+                    <div class="category-card" data-category="desserts">
                         <div class="category-icon">🍰</div>
                         <h3>Desserts</h3>
                         <p>Sweet little moments</p>
                     </div>
-
                 </div>
-
             </section>
 
-            <!-- RESTAURANTS -->
+            <!-- RESTAURANTS SECTION -->
             <section class="restaurants" id="restaurants">
-
                 <div class="section-heading">
                     <div>
                         <p class="section-tag">HANDPICKED FOR YOU</p>
@@ -191,9 +170,8 @@
                     </div>
                 </div>
 
-                <!-- FOOD FILTERS -->
+                <!-- FILTERS -->
                 <div class="filter-bar">
-
                     <select id="rating-filter">
                         <option value="0">All Ratings</option>
                         <option value="4">4.0+ Rating</option>
@@ -226,252 +204,17 @@
                         <option value="sandwiches">Sandwiches</option>
                     </select>
 
-                    <button id="reset-filters">Reset Filters</button>
-
+                    <button type="button" id="reset-filters">Reset Filters</button>
                 </div>
 
-                <!-- RESTAURANT GRID -->
-                <div class="restaurant-grid">
-
-                    <!-- 1. PIZZA -->
-                    <div class="restaurant-card" data-rating="4.5" data-price="250" data-cuisine="pizza italian fast food">
-
-                        <div class="restaurant-image">
-                            <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=600" alt="Fresh pizza">
-                            <span class="offer">20% OFF</span>
-                        </div>
-
-                        <div class="restaurant-info">
-                            <div class="restaurant-title">
-                                <h3>Pizza Paradise</h3>
-                                <span class="rating">★ 4.5</span>
-                            </div>
-                            <p>Pizza, Italian, Fast Food</p>
-                            <div class="restaurant-meta">
-                                <span>₹250 for two</span>
-                                <span>30 min</span>
-                            </div>
-                            <button class="add-to-cart-btn" data-name="Pizza Paradise">+ Add to Cart</button>
-                        </div>
-
-                    </div>
-
-                    <!-- 2. BURGER -->
-                    <div class="restaurant-card" data-rating="4.3" data-price="200" data-cuisine="burgers american snacks">
-
-                        <div class="restaurant-image">
-                            <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=600" alt="Juicy burger">
-                            <span class="offer">15% OFF</span>
-                        </div>
-
-                        <div class="restaurant-info">
-                            <div class="restaurant-title">
-                                <h3>Burger House</h3>
-                                <span class="rating">★ 4.3</span>
-                            </div>
-                            <p>Burgers, American, Snacks</p>
-                            <div class="restaurant-meta">
-                                <span>₹200 for two</span>
-                                <span>25 min</span>
-                            </div>
-                            <button class="add-to-cart-btn" data-name="Burger House">+ Add to Cart</button>
-                        </div>
-
-                    </div>
-
-                    <!-- 3. BIRYANI -->
-                    <div class="restaurant-card" data-rating="4.7" data-price="300" data-cuisine="biryani north indian">
-
-                        <div class="restaurant-image">
-                            <img src="https://images.unsplash.com/photo-1563379091339-03246963d96c?w=600" alt="Delicious biryani">
-                            <span class="offer">10% OFF</span>
-                        </div>
-
-                        <div class="restaurant-info">
-                            <div class="restaurant-title">
-                                <h3>Biryani Junction</h3>
-                                <span class="rating">★ 4.7</span>
-                            </div>
-                            <p>Biryani, North Indian</p>
-                            <div class="restaurant-meta">
-                                <span>₹300 for two</span>
-                                <span>35 min</span>
-                            </div>
-                            <button class="add-to-cart-btn" data-name="Biryani Junction">+ Add to Cart</button>
-                        </div>
-
-                    </div>
-
-                    <!-- 4. DESSERTS -->
-                    <div class="restaurant-card" data-rating="4.4" data-price="180" data-cuisine="desserts bakery sweets">
-
-                        <div class="restaurant-image">
-                            <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?w=600" alt="Delicious donuts">
-                            <span class="offer">FREE DELIVERY</span>
-                        </div>
-
-                        <div class="restaurant-info">
-                            <div class="restaurant-title">
-                                <h3>Sweet Cravings</h3>
-                                <span class="rating">★ 4.4</span>
-                            </div>
-                            <p>Desserts, Bakery, Sweets</p>
-                            <div class="restaurant-meta">
-                                <span>₹180 for two</span>
-                                <span>20 min</span>
-                            </div>
-                            <button class="add-to-cart-btn" data-name="Sweet Cravings">+ Add to Cart</button>
-                        </div>
-
-                    </div>
-
-                    <!-- 5. CHINESE -->
-                    <div class="restaurant-card" data-rating="4.6" data-price="220" data-cuisine="chinese asian noodles">
-
-                        <div class="restaurant-image">
-                            <img src="https://images.unsplash.com/photo-1563245372-f21724e3856d?w=600" alt="Chinese food">
-                            <span class="offer">15% OFF</span>
-                        </div>
-
-                        <div class="restaurant-info">
-                            <div class="restaurant-title">
-                                <h3>Wok Express</h3>
-                                <span class="rating">★ 4.6</span>
-                            </div>
-                            <p>Chinese, Asian, Noodles</p>
-                            <div class="restaurant-meta">
-                                <span>₹220 for two</span>
-                                <span>25 min</span>
-                            </div>
-                            <button class="add-to-cart-btn" data-name="Wok Express">+ Add to Cart</button>
-                        </div>
-
-                    </div>
-
-                    <!-- 6. SOUTH INDIAN -->
-                    <div class="restaurant-card" data-rating="4.5" data-price="160" data-cuisine="south indian dosa idli">
-
-                        <div class="restaurant-image">
-                            <img src="https://images.unsplash.com/photo-1668236543090-82eba5ee5976?w=600" alt="South Indian dosa">
-                            <span class="offer">10% OFF</span>
-                        </div>
-
-                        <div class="restaurant-info">
-                            <div class="restaurant-title">
-                                <h3>Madras Cafe</h3>
-                                <span class="rating">★ 4.5</span>
-                            </div>
-                            <p>South Indian, Dosa, Idli</p>
-                            <div class="restaurant-meta">
-                                <span>₹160 for two</span>
-                                <span>20 min</span>
-                            </div>
-                            <button class="add-to-cart-btn" data-name="Madras Cafe">+ Add to Cart</button>
-                        </div>
-
-                    </div>
-
-                    <!-- 7. MEXICAN -->
-                    <div class="restaurant-card" data-rating="4.4" data-price="280" data-cuisine="mexican tacos burritos">
-
-                        <div class="restaurant-image">
-                            <img src="https://images.unsplash.com/photo-1551504734-5ee1c4a1479b?w=600" alt="Mexican tacos">
-                            <span class="offer">20% OFF</span>
-                        </div>
-
-                        <div class="restaurant-info">
-                            <div class="restaurant-title">
-                                <h3>Mexican Fiesta</h3>
-                                <span class="rating">★ 4.4</span>
-                            </div>
-                            <p>Mexican, Tacos, Burritos</p>
-                            <div class="restaurant-meta">
-                                <span>₹280 for two</span>
-                                <span>30 min</span>
-                            </div>
-                            <button class="add-to-cart-btn" data-name="Mexican Fiesta">+ Add to Cart</button>
-                        </div>
-
-                    </div>
-
-                    <!-- 8. PASTA -->
-                    <div class="restaurant-card" data-rating="4.6" data-price="260" data-cuisine="pasta italian continental">
-
-                        <div class="restaurant-image">
-                            <img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=600" alt="Italian pasta">
-                            <span class="offer">FREE DELIVERY</span>
-                        </div>
-
-                        <div class="restaurant-info">
-                            <div class="restaurant-title">
-                                <h3>Pasta Point</h3>
-                                <span class="rating">★ 4.6</span>
-                            </div>
-                            <p>Pasta, Italian, Continental</p>
-                            <div class="restaurant-meta">
-                                <span>₹260 for two</span>
-                                <span>30 min</span>
-                            </div>
-                            <button class="add-to-cart-btn" data-name="Pasta Point">+ Add to Cart</button>
-                        </div>
-
-                    </div>
-
-                    <!-- 9. STREET FOOD -->
-                    <div class="restaurant-card" data-rating="4.3" data-price="140" data-cuisine="street food indian chaat">
-
-                        <div class="restaurant-image">
-                            <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?w=600" alt="Indian street food">
-                            <span class="offer">10% OFF</span>
-                        </div>
-
-                        <div class="restaurant-info">
-                            <div class="restaurant-title">
-                                <h3>Desi Street Kitchen</h3>
-                                <span class="rating">★ 4.3</span>
-                            </div>
-                            <p>Street Food, Indian, Chaat</p>
-                            <div class="restaurant-meta">
-                                <span>₹140 for two</span>
-                                <span>20 min</span>
-                            </div>
-                            <button class="add-to-cart-btn" data-name="Desi Street Kitchen">+ Add to Cart</button>
-                        </div>
-
-                    </div>
-
-                    <!-- 10. SANDWICHES -->
-                    <div class="restaurant-card" data-rating="4.2" data-price="190" data-cuisine="sandwiches cafe fast food">
-
-                        <div class="restaurant-image">
-                            <img src="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?w=600" alt="Fresh sandwich">
-                            <span class="offer">15% OFF</span>
-                        </div>
-
-                        <div class="restaurant-info">
-                            <div class="restaurant-title">
-                                <h3>Sandwich Studio</h3>
-                                <span class="rating">★ 4.2</span>
-                            </div>
-                            <p>Sandwiches, Cafe, Fast Food</p>
-                            <div class="restaurant-meta">
-                                <span>₹190 for two</span>
-                                <span>15 min</span>
-                            </div>
-                            <button class="add-to-cart-btn" data-name="Sandwich Studio">+ Add to Cart</button>
-                        </div>
-
-                    </div>
-
-                </div>
+                <!-- RESTAURANT CARDS GENERATED BY JAVASCRIPT -->
+                <div class="restaurant-grid" id="restaurant-grid"></div>
 
                 <p id="search-message" class="search-message" aria-live="polite"></p>
-
             </section>
 
-            <!-- ORDER TRACKING -->
+            <!-- ORDER TRACKING SECTION -->
             <section class="tracking-section" id="track-order">
-
                 <div class="section-heading">
                     <div>
                         <p class="section-tag">YOUR ORDER, YOUR WAY</p>
@@ -481,37 +224,24 @@
                 </div>
 
                 <div class="tracking-box">
-
                     <div class="tracking-search">
-                        <input
-                            type="text"
-                            id="tracking-order-id"
-                            placeholder="Enter your Order ID (e.g. CRV12345)"
-                            aria-label="Order ID"
-                        >
-
-                        <button id="track-order-button">
-                            Track Order
-                        </button>
+                        <input type="text" id="tracking-order-id" placeholder="Enter your Order ID (e.g. CRV12345)"
+                            aria-label="Order ID">
+                        <button type="button" id="track-order-button">Track Order</button>
                     </div>
 
                     <p id="tracking-message" aria-live="polite"></p>
 
                     <div id="tracking-result" class="tracking-result" hidden>
-
                         <div class="tracking-order-info">
                             <div>
                                 <span>ORDER ID</span>
                                 <h3 id="tracking-result-id"></h3>
                             </div>
-
-                            <span class="tracking-status" id="tracking-status">
-                                Order Placed
-                            </span>
+                            <span class="tracking-status" id="tracking-status">Order Placed</span>
                         </div>
 
                         <div class="tracking-timeline">
-
                             <div class="tracking-step completed">
                                 <span class="step-icon">✓</span>
                                 <div>
@@ -543,17 +273,11 @@
                                     <p>Enjoy your delicious meal!</p>
                                 </div>
                             </div>
-
                         </div>
 
-                        <p class="tracking-note">
-                            Demo tracking — delivery updates are simulated.
-                        </p>
-
+                        <p class="tracking-note">Demo tracking — delivery updates are simulated.</p>
                     </div>
-
                 </div>
-
             </section>
 
             <!-- FOOTER -->
@@ -562,32 +286,65 @@
             </footer>
 
         </main>
+    </div>
 
+    <!-- RESTAURANT MENU MODAL -->
+    <div class="modal" id="menu-modal">
+        <div class="modal-content menu-modal-content">
+
+            <button type="button" class="close-modal" id="close-menu">
+                &times;
+            </button>
+
+            <div class="menu-modal-header">
+                <p class="section-tag">EXPLORE THE MENU</p>
+                <h2 id="menu-restaurant-name">Restaurant Name</h2>
+                <p>Find something delicious to enjoy.</p>
+            </div>
+
+            <!-- MENU SEARCH -->
+            <div class="menu-search-box">
+                <span>⌕</span>
+                <input type="search" id="menu-search" placeholder="Search dishes by name..."
+                    aria-label="Search menu dishes">
+            </div>
+
+            <!-- VEG / NON-VEG FILTERS -->
+            <div class="menu-filters">
+                <button type="button" class="menu-filter-btn active" data-filter="all">All Items</button>
+                <button type="button" class="menu-filter-btn" data-filter="veg">🟢 Veg</button>
+                <button type="button" class="menu-filter-btn" data-filter="non-veg">🔴 Non-Veg</button>
+            </div>
+
+            <!-- MENU ITEMS GENERATED BY JAVASCRIPT -->
+            <div class="menu-items-grid" id="menu-items-container"></div>
+
+        </div>
+    </div>
+
+    <!-- RESTAURANT DETAILS MODAL -->
+    <div class="modal" id="restaurant-details-modal">
+        <div class="modal-content restaurant-details-content">
+            <button type="button" class="close-modal" id="close-restaurant-details">
+                &times;
+            </button>
+
+            <div id="restaurant-details-body"></div>
+        </div>
     </div>
 
     <!-- CART MODAL -->
     <div class="cart-modal" id="cart-modal">
-
         <div class="cart-content">
-
-            <button class="close-cart" id="close-cart">×</button>
-
+            <button type="button" class="close-cart" id="close-cart">×</button>
             <h2>Your Cart 🛒</h2>
-
             <div id="cart-items"></div>
-
-            <p class="cart-total">
-                Total Items: <span id="modal-cart-count">0</span>
-            </p>
-
-            <button id="clear-cart" class="clear-cart-btn">
-                Clear Cart
-            </button>
-
+            <p class="cart-total">Total Items: <span id="modal-cart-count">0</span></p>
+            <button type="button" id="clear-cart" class="clear-cart-btn">Clear Cart</button>
         </div>
-
     </div>
 
+    <!-- JAVASCRIPT -->
     <script src="script.js"></script>
 
 </body>
