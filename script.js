@@ -5,106 +5,16 @@
 /* 1. RESTAURANT DATA */
 
 const restaurants = [
-    {
-        name: "Pizza Paradise",
-        rating: 4.5,
-        price: 250,
-        cuisine: "pizza italian fast food",
-        description: "Pizza, Italian, Fast Food",
-        image: "https://images.unsplash.com/photo-1513104890138-7c749659a591?w=600",
-        offer: "20% OFF",
-        time: "30 min"
-    },
-    {
-        name: "Burger House",
-        rating: 4.3,
-        price: 200,
-        cuisine: "burgers american fast food",
-        description: "Burgers, American, Snacks",
-        image: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=600",
-        offer: "15% OFF",
-        time: "25 min"
-    },
-    {
-        name: "Biryani Junction",
-        rating: 4.7,
-        price: 300,
-        cuisine: "biryani north indian",
-        description: "Biryani, North Indian",
-        image: "https://images.unsplash.com/photo-1563379091339-03246963d96c?w=600",
-        offer: "10% OFF",
-        time: "35 min"
-    },
-    {
-        name: "Sweet Cravings",
-        rating: 4.4,
-        price: 180,
-        cuisine: "desserts bakery sweets",
-        description: "Desserts, Bakery, Sweets",
-        image: "https://images.unsplash.com/photo-1551024506-0bccd828d307?w=600",
-        offer: "FREE DELIVERY",
-        time: "20 min"
-    },
-    {
-        name: "Wok Express",
-        rating: 4.6,
-        price: 220,
-        cuisine: "chinese asian noodles",
-        description: "Chinese, Asian, Noodles",
-        image: "https://images.unsplash.com/photo-1563245372-f21724e3856d?w=600",
-        offer: "15% OFF",
-        time: "25 min"
-    },
-    {
-        name: "Madras Cafe",
-        rating: 4.5,
-        price: 160,
-        cuisine: "south indian dosa idli",
-        description: "South Indian, Dosa, Idli",
-        image: "https://images.unsplash.com/photo-1668236543090-82eba5ee5976?w=600",
-        offer: "10% OFF",
-        time: "20 min"
-    },
-    {
-        name: "Mexican Fiesta",
-        rating: 4.4,
-        price: 280,
-        cuisine: "mexican tacos burritos",
-        description: "Mexican, Tacos, Burritos",
-        image: "https://images.unsplash.com/photo-1551504734-5ee1c4a1479b?w=600",
-        offer: "20% OFF",
-        time: "30 min"
-    },
-    {
-        name: "Pasta Point",
-        rating: 4.6,
-        price: 260,
-        cuisine: "pasta italian continental",
-        description: "Pasta, Italian, Continental",
-        image: "https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=600",
-        offer: "FREE DELIVERY",
-        time: "30 min"
-    },
-    {
-        name: "Desi Street Kitchen",
-        rating: 4.3,
-        price: 140,
-        cuisine: "street food indian chaat",
-        description: "Street Food, Indian, Chaat",
-        image: "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=600",
-        offer: "10% OFF",
-        time: "20 min"
-    },
-    {
-        name: "Sandwich Studio",
-        rating: 4.2,
-        price: 190,
-        cuisine: "sandwiches cafe fast food",
-        description: "Sandwiches, Cafe, Fast Food",
-        image: "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?w=600",
-        offer: "15% OFF",
-        time: "15 min"
-    }
+    { name: "Pizza Paradise", rating: 4.5, price: 250, cuisine: "pizza italian fast food", description: "Pizza, Italian, Fast Food", image: "https://images.unsplash.com/photo-1513104890138-7c749659a591?w=600", offer: "20% OFF", time: "30 min" },
+    { name: "Burger House", rating: 4.3, price: 200, cuisine: "burgers american fast food", description: "Burgers, American, Snacks", image: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=600", offer: "15% OFF", time: "25 min" },
+    { name: "Biryani Junction", rating: 4.7, price: 300, cuisine: "biryani north indian", description: "Biryani, North Indian", image: "https://images.unsplash.com/photo-1563379091339-03246963d96c?w=600", offer: "10% OFF", time: "35 min" },
+    { name: "Sweet Cravings", rating: 4.4, price: 180, cuisine: "desserts bakery sweets", description: "Desserts, Bakery, Sweets", image: "https://images.unsplash.com/photo-1551024506-0bccd828d307?w=600", offer: "FREE DELIVERY", time: "20 min" },
+    { name: "Wok Express", rating: 4.6, price: 220, cuisine: "chinese asian noodles", description: "Chinese, Asian, Noodles", image: "https://images.unsplash.com/photo-1563245372-f21724e3856d?w=600", offer: "15% OFF", time: "25 min" },
+    { name: "Madras Cafe", rating: 4.5, price: 160, cuisine: "south indian dosa idli", description: "South Indian, Dosa, Idli", image: "https://images.unsplash.com/photo-1668236543090-82eba5ee5976?w=600", offer: "10% OFF", time: "20 min" },
+    { name: "Mexican Fiesta", rating: 4.4, price: 280, cuisine: "mexican tacos burritos", description: "Mexican, Tacos, Burritos", image: "https://images.unsplash.com/photo-1551504734-5ee1c4a1479b?w=600", offer: "20% OFF", time: "30 min" },
+    { name: "Pasta Point", rating: 4.6, price: 260, cuisine: "pasta italian continental", description: "Pasta, Italian, Continental", image: "https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=600", offer: "FREE DELIVERY", time: "30 min" },
+    { name: "Desi Street Kitchen", rating: 4.3, price: 140, cuisine: "street food indian chaat", description: "Street Food, Indian, Chaat", image: "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=600", offer: "10% OFF", time: "20 min" },
+    { name: "Sandwich Studio", rating: 4.2, price: 190, cuisine: "sandwiches cafe fast food", description: "Sandwiches, Cafe, Fast Food", image: "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?w=600", offer: "15% OFF", time: "15 min" }
 ];
 
 
@@ -194,6 +104,36 @@ const resetFiltersButton = document.getElementById("reset-filters");
 
 const restaurantGrid = document.getElementById("restaurant-grid");
 
+/* RESTAURANT SORTING */
+
+const restaurantSortOrder = document.createElement("select");
+
+restaurantSortOrder.id = "restaurant-sort";
+restaurantSortOrder.className = "restaurant-sort";
+
+restaurantSortOrder.innerHTML = `
+    <option value="default">Sort: Recommended</option>
+    <option value="rating-high">⭐ Highest Rated</option>
+    <option value="price-low">💰 Price: Low to High</option>
+    <option value="price-high">💰 Price: High to Low</option>
+`;
+
+restaurantSortOrder.setAttribute("aria-label", "Sort restaurants");
+
+const sortWrapper = document.createElement("div");
+sortWrapper.className = "restaurant-sort-wrapper";
+
+const sortLabel = document.createElement("label");
+sortLabel.setAttribute("for", "restaurant-sort");
+sortLabel.textContent = "Sort restaurants";
+
+sortWrapper.appendChild(sortLabel);
+sortWrapper.appendChild(restaurantSortOrder);
+
+if (restaurantGrid && restaurantGrid.parentElement) {
+    restaurantGrid.parentElement.insertBefore(sortWrapper, restaurantGrid);
+}
+
 const restaurantDetailsModal = document.getElementById("restaurant-details-modal");
 const restaurantDetailsBody = document.getElementById("restaurant-details-body");
 const closeRestaurantDetails = document.getElementById("close-restaurant-details");
@@ -278,22 +218,49 @@ function showToast(message, type = "success") {
     `;
 
     toast.querySelector(".toast-message").textContent = message;
-
     toastContainer.appendChild(toast);
 
     setTimeout(() => {
         toast.classList.add("removing");
 
-        setTimeout(() => {
-            toast.remove();
-        }, 300);
+        setTimeout(() => toast.remove(), 300);
     }, 2500);
 }
+
+
+/* RESTAURANT SORTING LOGIC */
+
+const originalRestaurantOrder = [...restaurants];
+
+function sortRestaurants(sortValue) {
+    if (sortValue === "rating-high") {
+        restaurants.sort((a, b) => b.rating - a.rating);
+    } else if (sortValue === "price-low") {
+        restaurants.sort((a, b) => a.price - b.price);
+    } else if (sortValue === "price-high") {
+        restaurants.sort((a, b) => b.price - a.price);
+    } else {
+        restaurants.splice(
+            0,
+            restaurants.length,
+            ...originalRestaurantOrder
+        );
+    }
+
+    renderRestaurants();
+    filterRestaurants();
+}
+
+restaurantSortOrder.addEventListener("change", () => {
+    sortRestaurants(restaurantSortOrder.value);
+});
 
 
 /* 5. CREATE RESTAURANT CARDS */
 
 function renderRestaurants() {
+    if (!restaurantGrid) return;
+
     restaurantGrid.innerHTML = restaurants.map(restaurant => {
         const cuisineTags = restaurant.description
             .split(",")
@@ -338,13 +305,13 @@ function renderRestaurants() {
                         <span>${escapeHTML(restaurant.time)}</span>
                     </div>
 
-                    <button
-                        type="button"
-                        class="add-to-cart-btn"
-                        data-name="${escapeHTML(restaurant.name)}"
-                    >
-                        View Menu
-                    </button>
+            <button
+                type="button"
+                class="add-to-cart-btn"
+                data-name="${escapeHTML(restaurant.name)}"
+            >
+                View Menu
+            </button>
                 </div>
             </article>
         `;
@@ -362,29 +329,18 @@ function getRestaurantCards() {
 
 function showRestaurantDetails(name) {
     const restaurant = restaurants.find(item => item.name === name);
-
-    if (!restaurant) return;
+    if (!restaurant || !restaurantDetailsBody || !restaurantDetailsModal) return;
 
     restaurantDetailsBody.innerHTML = `
         <div class="restaurant-details-image">
-            <img
-                src="${restaurant.image}"
-                alt="${escapeHTML(restaurant.name)}"
-            >
-
-            <span class="offer">
-                ${escapeHTML(restaurant.offer)}
-            </span>
+            <img src="${restaurant.image}" alt="${escapeHTML(restaurant.name)}">
+            <span class="offer">${escapeHTML(restaurant.offer)}</span>
         </div>
 
         <div class="restaurant-details-info">
             <p class="section-tag">RESTAURANT DETAILS</p>
-
             <h2>${escapeHTML(restaurant.name)}</h2>
-
-            <div class="details-rating">
-                ⭐ ${restaurant.rating} / 5
-            </div>
+            <div class="details-rating">⭐ ${restaurant.rating} / 5</div>
 
             <p class="details-description">
                 Discover delicious food at ${escapeHTML(restaurant.name)}.
@@ -417,11 +373,7 @@ function showRestaurantDetails(name) {
                 *Opening hours and restaurant information are sample demo data.
             </p>
 
-            <button
-                type="button"
-                class="details-menu-button"
-                id="details-view-menu"
-            >
+            <button type="button" class="details-menu-button" id="details-view-menu">
                 Explore Menu →
             </button>
         </div>
@@ -441,29 +393,32 @@ function showRestaurantDetails(name) {
 
 /* CLOSE RESTAURANT DETAILS */
 
-closeRestaurantDetails.addEventListener("click", () => {
-    restaurantDetailsModal.classList.remove("active");
+function closeRestaurantDetailsPopup() {
+    if (restaurantDetailsModal) {
+        restaurantDetailsModal.classList.remove("active");
+    }
+
     document.body.style.overflow = "";
-});
+}
 
-restaurantDetailsModal.addEventListener("click", event => {
-    if (event.target === restaurantDetailsModal) {
-        restaurantDetailsModal.classList.remove("active");
-        document.body.style.overflow = "";
-    }
-});
+if (closeRestaurantDetails) {
+    closeRestaurantDetails.addEventListener("click", closeRestaurantDetailsPopup);
+}
 
-document.addEventListener("keydown", event => {
-    if (event.key === "Escape") {
-        restaurantDetailsModal.classList.remove("active");
-        document.body.style.overflow = "";
-    }
-});
+if (restaurantDetailsModal) {
+    restaurantDetailsModal.addEventListener("click", event => {
+        if (event.target === restaurantDetailsModal) {
+            closeRestaurantDetailsPopup();
+        }
+    });
+}
 
 
 /* 6. SEARCH AND FILTERING */
 
 function filterRestaurants() {
+    if (!searchInput || !ratingFilter || !priceFilter || !cuisineFilter || !searchMessage) return;
+
     const searchTerm = searchInput.value.trim().toLowerCase();
     const minimumRating = Number(ratingFilter.value);
     const selectedPrice = priceFilter.value;
@@ -472,14 +427,9 @@ function filterRestaurants() {
     let visibleCount = 0;
 
     getRestaurantCards().forEach(card => {
-        const name = card.querySelector(".restaurant-title h3")
-            .textContent.toLowerCase();
-
-        const description = card.querySelector(".restaurant-info")
-            .textContent.toLowerCase();
-
+        const name = card.querySelector(".restaurant-title h3").textContent.toLowerCase();
+        const description = card.querySelector(".restaurant-info").textContent.toLowerCase();
         const cuisine = (card.dataset.cuisine || "").toLowerCase();
-
         const rating = Number(card.dataset.rating);
         const price = Number(card.dataset.price);
 
@@ -493,20 +443,15 @@ function filterRestaurants() {
 
         let matchesPrice = true;
 
-        if (selectedPrice === "budget") {
-            matchesPrice = price < 200;
-        } else if (selectedPrice === "medium") {
-            matchesPrice = price >= 200 && price <= 300;
-        } else if (selectedPrice === "premium") {
-            matchesPrice = price > 300;
-        }
+        if (selectedPrice === "budget") matchesPrice = price < 200;
+        else if (selectedPrice === "medium") matchesPrice = price >= 200 && price <= 300;
+        else if (selectedPrice === "premium") matchesPrice = price > 300;
 
         const matchesCuisine =
             selectedCuisine === "all" ||
             cuisine.includes(selectedCuisine);
 
-        const restaurantName = card.querySelector(".restaurant-title h3")
-            .textContent.trim();
+        const restaurantName = card.querySelector(".restaurant-title h3").textContent.trim();
 
         const matchesFavorites =
             !showFavoritesOnly ||
@@ -542,44 +487,48 @@ function filterRestaurants() {
     }
 }
 
-searchInput.addEventListener("input", filterRestaurants);
+if (searchInput) {
+    searchInput.addEventListener("input", filterRestaurants);
 
-searchInput.addEventListener("keydown", event => {
-    if (event.key === "Enter") {
-        event.preventDefault();
+    searchInput.addEventListener("keydown", event => {
+        if (event.key === "Enter") {
+            event.preventDefault();
+            filterRestaurants();
+        }
+    });
+}
+
+if (searchButton) {
+    searchButton.addEventListener("click", filterRestaurants);
+}
+
+if (ratingFilter) ratingFilter.addEventListener("change", filterRestaurants);
+if (priceFilter) priceFilter.addEventListener("change", filterRestaurants);
+if (cuisineFilter) cuisineFilter.addEventListener("change", filterRestaurants);
+
+if (resetFiltersButton) {
+    resetFiltersButton.addEventListener("click", () => {
+        if (searchInput) searchInput.value = "";
+        if (ratingFilter) ratingFilter.value = "0";
+        if (priceFilter) priceFilter.value = "all";
+        if (cuisineFilter) cuisineFilter.value = "all";
+
+        showFavoritesOnly = false;
         filterRestaurants();
-    }
-});
-
-searchButton.addEventListener("click", filterRestaurants);
-
-ratingFilter.addEventListener("change", filterRestaurants);
-priceFilter.addEventListener("change", filterRestaurants);
-cuisineFilter.addEventListener("change", filterRestaurants);
-
-resetFiltersButton.addEventListener("click", () => {
-    searchInput.value = "";
-    ratingFilter.value = "0";
-    priceFilter.value = "all";
-    cuisineFilter.value = "all";
-
-    showFavoritesOnly = false;
-
-    filterRestaurants();
-});
+    });
+}
 
 
 /* 7. FAVOURITES */
 
 function addFavoriteButtons() {
     getRestaurantCards().forEach(card => {
-        const name = card.querySelector(".restaurant-title h3")
-            .textContent.trim();
-
+        const name = card.querySelector(".restaurant-title h3").textContent.trim();
         const imageContainer = card.querySelector(".restaurant-image");
 
-        const button = document.createElement("button");
+        if (!imageContainer) return;
 
+        const button = document.createElement("button");
         button.type = "button";
         button.className = "favorite-btn";
 
@@ -588,9 +537,7 @@ function addFavoriteButtons() {
 
             button.textContent = isFavorite ? "♥" : "♡";
             button.classList.toggle("favorited", isFavorite);
-            button.title = isFavorite
-                ? "Remove favourite"
-                : "Add favourite";
+            button.title = isFavorite ? "Remove favourite" : "Add favourite";
         }
 
         updateButton();
@@ -603,11 +550,7 @@ function addFavoriteButtons() {
                 favorites.push(name);
             }
 
-            localStorage.setItem(
-                "cravoraFavorites",
-                JSON.stringify(favorites)
-            );
-
+            localStorage.setItem("cravoraFavorites", JSON.stringify(favorites));
             updateButton();
             filterRestaurants();
         });
@@ -620,18 +563,19 @@ function addFavoriteButtons() {
 categoryCards.forEach(category => {
     category.addEventListener("click", () => {
         const categoryName = category.dataset.category ||
-            category.querySelector("h3").textContent.toLowerCase();
+            category.querySelector("h3")?.textContent.toLowerCase();
+
+        if (!searchInput) return;
 
         searchInput.value = categoryName;
-        ratingFilter.value = "0";
-        priceFilter.value = "all";
-        cuisineFilter.value = "all";
+        if (ratingFilter) ratingFilter.value = "0";
+        if (priceFilter) priceFilter.value = "all";
+        if (cuisineFilter) cuisineFilter.value = "all";
 
         showFavoritesOnly = false;
-
         filterRestaurants();
 
-        document.getElementById("restaurants").scrollIntoView({
+        document.getElementById("restaurants")?.scrollIntoView({
             behavior: "smooth"
         });
     });
@@ -649,14 +593,14 @@ navLinks.forEach(link => {
 
             showFavoritesOnly = true;
 
-            searchInput.value = "";
-            ratingFilter.value = "0";
-            priceFilter.value = "all";
-            cuisineFilter.value = "all";
+            if (searchInput) searchInput.value = "";
+            if (ratingFilter) ratingFilter.value = "0";
+            if (priceFilter) priceFilter.value = "all";
+            if (cuisineFilter) cuisineFilter.value = "all";
 
             filterRestaurants();
 
-            document.getElementById("restaurants").scrollIntoView({
+            document.getElementById("restaurants")?.scrollIntoView({
                 behavior: "smooth"
             });
         } else if (
@@ -678,25 +622,24 @@ navLinks.forEach(link => {
 
 const savedTheme = localStorage.getItem("cravoraTheme");
 
-if (savedTheme === "dark") {
-    document.body.classList.add("dark-mode");
-    themeToggle.textContent = "☀️";
-} else {
-    themeToggle.textContent = "🌙";
+if (themeToggle) {
+    if (savedTheme === "dark") {
+        document.body.classList.add("dark-mode");
+        themeToggle.textContent = "☀️";
+    } else {
+        themeToggle.textContent = "🌙";
+    }
+
+    themeToggle.addEventListener("click", () => {
+        document.body.classList.toggle("dark-mode");
+
+        const darkMode = document.body.classList.contains("dark-mode");
+
+        themeToggle.textContent = darkMode ? "☀️" : "🌙";
+
+        localStorage.setItem("cravoraTheme", darkMode ? "dark" : "light");
+    });
 }
-
-themeToggle.addEventListener("click", () => {
-    document.body.classList.toggle("dark-mode");
-
-    const darkMode = document.body.classList.contains("dark-mode");
-
-    themeToggle.textContent = darkMode ? "☀️" : "🌙";
-
-    localStorage.setItem(
-        "cravoraTheme",
-        darkMode ? "dark" : "light"
-    );
-});
 
 
 /* 11. CART DATA CLEANUP */
@@ -730,8 +673,10 @@ function updateCart() {
         0
     );
 
-    cartCount.textContent = totalQuantity;
-    modalCartCount.textContent = totalQuantity;
+    if (cartCount) cartCount.textContent = totalQuantity;
+    if (modalCartCount) modalCartCount.textContent = totalQuantity;
+
+    if (!cartItems) return;
 
     if (cart.length === 0) {
         cartItems.innerHTML = "<p>Your cart is empty!</p>";
@@ -747,29 +692,10 @@ function updateCart() {
             </div>
 
             <div class="cart-quantity">
-                <button
-                    type="button"
-                    class="quantity-btn"
-                    data-action="decrease"
-                    data-index="${index}"
-                >−</button>
-
+                <button type="button" class="quantity-btn" data-action="decrease" data-index="${index}">−</button>
                 <span>${item.quantity}</span>
-
-                <button
-                    type="button"
-                    class="quantity-btn"
-                    data-action="increase"
-                    data-index="${index}"
-                >+</button>
-
-                <button
-                    type="button"
-                    class="remove-item"
-                    data-index="${index}"
-                >
-                    Remove
-                </button>
+                <button type="button" class="quantity-btn" data-action="increase" data-index="${index}">+</button>
+                <button type="button" class="remove-item" data-index="${index}">Remove</button>
             </div>
         </div>
     `).join("") + `
@@ -779,54 +705,63 @@ function updateCart() {
     `;
 }
 
-cartButton.addEventListener("click", () => {
-    updateCart();
-    cartModal.style.display = "flex";
-});
-
-closeCart.addEventListener("click", () => {
-    cartModal.style.display = "none";
-});
-
-cartModal.addEventListener("click", event => {
-    if (event.target === cartModal) {
-        cartModal.style.display = "none";
-    }
-});
-
-cartItems.addEventListener("click", event => {
-    const removeButton = event.target.closest(".remove-item");
-    const actionButton = event.target.closest("[data-action]");
-
-    if (removeButton) {
-        cart.splice(Number(removeButton.dataset.index), 1);
+if (cartButton && cartModal) {
+    cartButton.addEventListener("click", () => {
         updateCart();
-        return;
-    }
+        cartModal.style.display = "flex";
+    });
+}
 
-    if (actionButton) {
-        const index = Number(actionButton.dataset.index);
+if (closeCart && cartModal) {
+    closeCart.addEventListener("click", () => {
+        cartModal.style.display = "none";
+    });
+}
 
-        if (!cart[index]) return;
+if (cartModal) {
+    cartModal.addEventListener("click", event => {
+        if (event.target === cartModal) {
+            cartModal.style.display = "none";
+        }
+    });
+}
 
-        if (actionButton.dataset.action === "increase") {
-            cart[index].quantity++;
-        } else if (actionButton.dataset.action === "decrease") {
-            cart[index].quantity--;
+if (cartItems) {
+    cartItems.addEventListener("click", event => {
+        const removeButton = event.target.closest(".remove-item");
+        const actionButton = event.target.closest("[data-action]");
 
-            if (cart[index].quantity <= 0) {
-                cart.splice(index, 1);
-            }
+        if (removeButton) {
+            cart.splice(Number(removeButton.dataset.index), 1);
+            updateCart();
+            return;
         }
 
-        updateCart();
-    }
-});
+        if (actionButton) {
+            const index = Number(actionButton.dataset.index);
+            if (!cart[index]) return;
 
-clearCartButton.addEventListener("click", () => {
-    cart = [];
-    updateCart();
-});
+            if (actionButton.dataset.action === "increase") {
+                cart[index].quantity++;
+            } else if (actionButton.dataset.action === "decrease") {
+                cart[index].quantity--;
+
+                if (cart[index].quantity <= 0) {
+                    cart.splice(index, 1);
+                }
+            }
+
+            updateCart();
+        }
+    });
+}
+
+if (clearCartButton) {
+    clearCartButton.addEventListener("click", () => {
+        cart = [];
+        updateCart();
+    });
+}
 
 
 /* 13. RESTAURANT MENU MODAL */
@@ -843,6 +778,8 @@ menuModal.innerHTML = `
             type="button"
             id="close-menu"
             class="close-checkout"
+            style="position:absolute;top:12px;right:12px;z-index:99999;cursor:pointer;"
+            aria-label="Close menu"
         >
             &times;
         </button>
@@ -851,9 +788,7 @@ menuModal.innerHTML = `
 
         <h2 id="menu-restaurant-name">Restaurant Menu</h2>
 
-        <p class="checkout-subtitle">
-            Choose your favourite food
-        </p>
+        <p class="checkout-subtitle">Choose your favourite food</p>
 
         <input
             type="search"
@@ -863,31 +798,10 @@ menuModal.innerHTML = `
         >
 
         <div class="menu-toolbar">
-
             <div class="menu-filter-buttons">
-                <button
-                    type="button"
-                    class="menu-filter-btn active"
-                    data-filter="all"
-                >
-                    All
-                </button>
-
-                <button
-                    type="button"
-                    class="menu-filter-btn"
-                    data-filter="veg"
-                >
-                    🟢 Veg
-                </button>
-
-                <button
-                    type="button"
-                    class="menu-filter-btn"
-                    data-filter="non-veg"
-                >
-                    🔴 Non-Veg
-                </button>
+                <button type="button" class="menu-filter-btn active" data-filter="all">All</button>
+                <button type="button" class="menu-filter-btn" data-filter="veg">🟢 Veg</button>
+                <button type="button" class="menu-filter-btn" data-filter="non-veg">🔴 Non-Veg</button>
             </div>
 
             <select id="menu-sort" class="menu-sort">
@@ -895,18 +809,11 @@ menuModal.innerHTML = `
                 <option value="low-high">Price: Low to High</option>
                 <option value="high-low">Price: High to Low</option>
             </select>
-
         </div>
 
-        <div
-            id="menu-category-filters"
-            class="menu-category-filters"
-        ></div>
+        <div id="menu-category-filters" class="menu-category-filters"></div>
 
-        <div
-            id="menu-items"
-            class="menu-items-grid"
-        ></div>
+        <div id="menu-items" class="menu-items-grid"></div>
 
     </div>
 `;
@@ -953,38 +860,26 @@ function getFoodCategory(item) {
 /* 15. RENDER MENU CATEGORY FILTERS */
 
 function renderMenuCategoryFilters(menu) {
-    const categories = [
-        ...new Set(menu.map(item => getFoodCategory(item)))
-    ];
+    const categories = [...new Set(menu.map(item => getFoodCategory(item)))];
 
     menuCategoryFilters.innerHTML = `
-        <button
-            type="button"
-            class="menu-category-btn active"
-            data-category="all"
-        >
+        <button type="button" class="menu-category-btn active" data-category="all">
             All Categories
         </button>
 
         ${categories.map(category => `
-            <button
-                type="button"
-                class="menu-category-btn"
-                data-category="${category}"
-            >
+            <button type="button" class="menu-category-btn" data-category="${category}">
                 ${category}
             </button>
         `).join("")}
     `;
 
-    menuCategoryFilters
-        .querySelectorAll(".menu-category-btn")
-        .forEach(button => {
-            button.classList.toggle(
-                "active",
-                button.dataset.category === currentMenuCategory
-            );
-        });
+    menuCategoryFilters.querySelectorAll(".menu-category-btn").forEach(button => {
+        button.classList.toggle(
+            "active",
+            button.dataset.category === currentMenuCategory
+        );
+    });
 }
 
 
@@ -992,17 +887,15 @@ function renderMenuCategoryFilters(menu) {
 
 menuCategoryFilters.addEventListener("click", event => {
     const button = event.target.closest(".menu-category-btn");
-
     if (!button) return;
 
     currentMenuCategory = button.dataset.category;
 
-    menuCategoryFilters
-        .querySelectorAll(".menu-category-btn")
-        .forEach(btn => btn.classList.remove("active"));
+    menuCategoryFilters.querySelectorAll(".menu-category-btn").forEach(btn => {
+        btn.classList.remove("active");
+    });
 
     button.classList.add("active");
-
     renderMenuItems();
 });
 
@@ -1018,7 +911,6 @@ function renderMenuItems() {
     }
 
     let filteredItems = menu.filter(item => {
-
         const matchesSearch =
             item.name.toLowerCase().includes(currentMenuSearch) ||
             item.description.toLowerCase().includes(currentMenuSearch);
@@ -1034,30 +926,18 @@ function renderMenuItems() {
         return matchesSearch && matchesType && matchesCategory;
     });
 
-
-    /* PRICE SORTING */
-
     if (currentMenuSort === "low-high") {
         filteredItems.sort((a, b) => a.price - b.price);
     } else if (currentMenuSort === "high-low") {
         filteredItems.sort((a, b) => b.price - a.price);
     }
 
-
-    /* EMPTY RESULT */
-
     if (filteredItems.length === 0) {
-        menuItemsContainer.innerHTML = `
-            <p>No food items found. Try another search!</p>
-        `;
+        menuItemsContainer.innerHTML = "<p>No food items found. Try another search!</p>";
         return;
     }
 
-
-    /* DISPLAY FOOD CARDS */
-
     menuItemsContainer.innerHTML = filteredItems.map(item => {
-
         const index = menu.indexOf(item);
         const quantity = menuQuantities[index] || 1;
         const isVeg = item.type === "veg";
@@ -1080,45 +960,23 @@ function renderMenuItems() {
                     </span>
 
                     <h3>${escapeHTML(item.name)}</h3>
-
                     <p>${escapeHTML(item.description)}</p>
 
-                    <strong class="menu-food-price">
-                        ₹${item.price}
-                    </strong>
+                    <strong class="menu-food-price">₹${item.price}</strong>
 
                     <div class="menu-item-actions">
 
                         <div class="menu-quantity-control">
 
-                            <button
-                                type="button"
-                                class="menu-quantity-btn"
-                                data-menu-action="decrease"
-                                data-menu-index="${index}"
-                            >
-                                −
-                            </button>
+                            <button type="button" class="menu-quantity-btn" data-menu-action="decrease" data-menu-index="${index}">−</button>
 
                             <span>${quantity}</span>
 
-                            <button
-                                type="button"
-                                class="menu-quantity-btn"
-                                data-menu-action="increase"
-                                data-menu-index="${index}"
-                            >
-                                +
-                            </button>
+                            <button type="button" class="menu-quantity-btn" data-menu-action="increase" data-menu-index="${index}">+</button>
 
                         </div>
 
-                        <button
-                            type="button"
-                            class="menu-add-button"
-                            data-menu-action="add"
-                            data-menu-index="${index}"
-                        >
+                        <button type="button" class="menu-add-button" data-menu-action="add" data-menu-index="${index}">
                             Add to Cart
                         </button>
 
@@ -1130,19 +988,15 @@ function renderMenuItems() {
 }
 
 
-/* 17. OPEN AND CLOSE MENU */
+/* 17. OPEN MENU */
 
 function openRestaurantMenu(name) {
-
     if (!restaurantMenus[name]) {
         showToast("Menu is not available for this restaurant.", "error");
         return;
     }
 
     currentMenuRestaurant = name;
-
-    /* Reset menu filters */
-
     currentMenuCategory = "all";
     currentMenuFilter = "all";
     currentMenuSearch = "";
@@ -1150,36 +1004,24 @@ function openRestaurantMenu(name) {
 
     menuQuantities = {};
 
-    /* Set default quantity */
-
     restaurantMenus[name].forEach((item, index) => {
         menuQuantities[index] = 1;
     });
-
-    /* Update menu heading and inputs */
 
     document.getElementById("menu-restaurant-name").textContent = name;
 
     menuSearchInput.value = "";
     menuSortSelect.value = "default";
 
-    /* Reset veg/non-veg buttons */
-
     menuModal.querySelectorAll(".menu-filter-btn").forEach(button => {
-        button.classList.toggle(
-            "active",
-            button.dataset.filter === "all"
-        );
+        button.classList.toggle("active", button.dataset.filter === "all");
     });
-
-    /* Render categories and food items */
 
     renderMenuCategoryFilters(restaurantMenus[name]);
     renderMenuItems();
 
-    /* Show menu modal */
-
     menuModal.style.display = "flex";
+    document.body.style.overflow = "hidden";
 }
 
 
@@ -1202,9 +1044,7 @@ menuSortSelect.addEventListener("change", () => {
 /* VEG AND NON-VEG FILTERING */
 
 menuModal.querySelectorAll(".menu-filter-btn").forEach(button => {
-
     button.addEventListener("click", () => {
-
         currentMenuFilter = button.dataset.filter;
 
         menuModal.querySelectorAll(".menu-filter-btn").forEach(btn => {
@@ -1212,24 +1052,25 @@ menuModal.querySelectorAll(".menu-filter-btn").forEach(button => {
         });
 
         button.classList.add("active");
-
         renderMenuItems();
     });
 });
 
 
-/* CLOSE MENU BUTTON */
+/* CLOSE MENU */
 
-document.getElementById("close-menu").addEventListener("click", () => {
+function closeRestaurantMenu() {
     menuModal.style.display = "none";
-});
-
-
-/* CLOSE MENU WHEN CLICKING OUTSIDE */
+    document.body.style.overflow = "";
+}
 
 menuModal.addEventListener("click", event => {
+    if (event.target.closest("#close-menu")) {
+        closeRestaurantMenu();
+    }
+
     if (event.target === menuModal) {
-        menuModal.style.display = "none";
+        closeRestaurantMenu();
     }
 });
 
@@ -1237,19 +1078,14 @@ menuModal.addEventListener("click", event => {
 /* 18. MENU QUANTITY AND ADD TO CART */
 
 menuItemsContainer.addEventListener("click", event => {
-
     const button = event.target.closest("[data-menu-action]");
-
     if (!button) return;
 
     const action = button.dataset.menuAction;
     const index = Number(button.dataset.menuIndex);
-
     const item = restaurantMenus[currentMenuRestaurant]?.[index];
 
     if (!item) return;
-
-    /* Increase quantity */
 
     if (action === "increase") {
         menuQuantities[index]++;
@@ -1257,22 +1093,13 @@ menuItemsContainer.addEventListener("click", event => {
         return;
     }
 
-    /* Decrease quantity */
-
     if (action === "decrease") {
-        menuQuantities[index] = Math.max(
-            1,
-            menuQuantities[index] - 1
-        );
-
+        menuQuantities[index] = Math.max(1, menuQuantities[index] - 1);
         renderMenuItems();
         return;
     }
 
-    /* Add item to cart */
-
     if (action === "add") {
-
         const quantity = menuQuantities[index];
 
         const existingItem = cart.find(cartItem =>
@@ -1292,10 +1119,6 @@ menuItemsContainer.addEventListener("click", event => {
         }
 
         updateCart();
-
-        button.textContent = "Added ✓";
-        button.classList.add("added");
-
         showToast(`${item.name} added to cart!`);
     }
 });
@@ -1303,31 +1126,27 @@ menuItemsContainer.addEventListener("click", event => {
 
 /* OPEN RESTAURANT DETAILS ON CARD CLICK */
 
-restaurantGrid.addEventListener("click", event => {
+if (restaurantGrid) {
+    restaurantGrid.addEventListener("click", event => {
+        const card = event.target.closest(".restaurant-card");
+        if (!card || event.target.closest("button")) return;
 
-    const card = event.target.closest(".restaurant-card");
-
-    if (!card) return;
-
-    if (event.target.closest("button")) return;
-
-    const name = card.querySelector(".restaurant-title h3")
-        .textContent.trim();
-
-    showRestaurantDetails(name);
-});
+        const name = card.querySelector(".restaurant-title h3").textContent.trim();
+        showRestaurantDetails(name);
+    });
+}
 
 
 /* 19. VIEW MENU BUTTONS */
 
-restaurantGrid.addEventListener("click", event => {
+if (restaurantGrid) {
+    restaurantGrid.addEventListener("click", event => {
+        const button = event.target.closest(".add-to-cart-btn");
+        if (!button) return;
 
-    const button = event.target.closest(".add-to-cart-btn");
-
-    if (!button) return;
-
-    openRestaurantMenu(button.dataset.name);
-});
+        openRestaurantMenu(button.dataset.name);
+    });
+}
 
 
 /* 20. CHECKOUT */
@@ -1338,8 +1157,9 @@ checkoutButton.id = "checkout-button";
 checkoutButton.className = "checkout-button";
 checkoutButton.textContent = "Proceed to Checkout";
 
-clearCartButton.parentElement.appendChild(checkoutButton);
-
+if (clearCartButton && clearCartButton.parentElement) {
+    clearCartButton.parentElement.appendChild(checkoutButton);
+}
 
 const checkoutModal = document.createElement("div");
 
@@ -1349,54 +1169,25 @@ checkoutModal.className = "checkout-modal";
 checkoutModal.innerHTML = `
     <div class="checkout-content">
 
-        <button
-            type="button"
-            id="close-checkout"
-            class="close-checkout"
-        >
-            &times;
-        </button>
+        <button type="button" id="close-checkout" class="close-checkout">&times;</button>
 
         <h2>Complete Your Order</h2>
-
-        <p class="checkout-subtitle">
-            Enter your delivery details below.
-        </p>
+        <p class="checkout-subtitle">Enter your delivery details below.</p>
 
         <div id="checkout-summary"></div>
 
         <form id="checkout-form">
 
             <label for="customer-name">Full Name</label>
-
-            <input
-                type="text"
-                id="customer-name"
-                placeholder="Enter your name"
-                required
-            >
+            <input type="text" id="customer-name" placeholder="Enter your name" required>
 
             <label for="customer-phone">Phone Number</label>
-
-            <input
-                type="tel"
-                id="customer-phone"
-                placeholder="Enter your phone number"
-                pattern="[0-9]{10}"
-                maxlength="10"
-                required
-            >
+            <input type="tel" id="customer-phone" placeholder="Enter your phone number" pattern="[0-9]{10}" maxlength="10" required>
 
             <label for="customer-address">Delivery Address</label>
-
-            <textarea
-                id="customer-address"
-                placeholder="Enter your complete address"
-                required
-            ></textarea>
+            <textarea id="customer-address" placeholder="Enter your complete address" required></textarea>
 
             <label for="payment-method">Payment Method</label>
-
             <select id="payment-method">
                 <option value="Cash on Delivery">Cash on Delivery</option>
                 <option value="Online Demo Payment">Online Payment (Demo)</option>
@@ -1404,9 +1195,7 @@ checkoutModal.innerHTML = `
 
             <h3 id="checkout-total"></h3>
 
-            <button type="submit" class="place-order-button">
-                Place Order
-            </button>
+            <button type="submit" class="place-order-button">Place Order</button>
 
         </form>
     </div>
@@ -1416,18 +1205,12 @@ document.body.appendChild(checkoutModal);
 
 
 function updateCheckoutSummary() {
-
     const summary = document.getElementById("checkout-summary");
 
     summary.innerHTML = cart.map(item => `
         <div class="checkout-item">
-            <span>
-                ${escapeHTML(item.name)} × ${item.quantity}
-            </span>
-
-            <strong>
-                ₹${item.price * item.quantity}
-            </strong>
+            <span>${escapeHTML(item.name)} × ${item.quantity}</span>
+            <strong>₹${item.price * item.quantity}</strong>
         </div>
     `).join("");
 
@@ -1435,25 +1218,20 @@ function updateCheckoutSummary() {
         `Total Amount: ₹${calculateCartTotal()}`;
 }
 
-
 checkoutButton.addEventListener("click", () => {
-
     if (cart.length === 0) {
         showToast("Your cart is empty! Add something first.", "error");
         return;
     }
 
     updateCheckoutSummary();
-
-    cartModal.style.display = "none";
+    if (cartModal) cartModal.style.display = "none";
     checkoutModal.style.display = "flex";
 });
-
 
 document.getElementById("close-checkout").addEventListener("click", () => {
     checkoutModal.style.display = "none";
 });
-
 
 checkoutModal.addEventListener("click", event => {
     if (event.target === checkoutModal) {
@@ -1470,8 +1248,7 @@ orderHistoryButton.id = "order-history-button";
 orderHistoryButton.className = "checkout-button";
 orderHistoryButton.textContent = "📦 My Orders";
 
-checkoutButton.parentElement.appendChild(orderHistoryButton);
-
+checkoutButton.parentElement?.appendChild(orderHistoryButton);
 
 const orderHistoryModal = document.createElement("div");
 
@@ -1481,19 +1258,10 @@ orderHistoryModal.className = "checkout-modal";
 orderHistoryModal.innerHTML = `
     <div class="checkout-content">
 
-        <button
-            type="button"
-            id="close-order-history"
-            class="close-checkout"
-        >
-            &times;
-        </button>
+        <button type="button" id="close-order-history" class="close-checkout">&times;</button>
 
         <h2>📦 My Orders</h2>
-
-        <p class="checkout-subtitle">
-            Your previous orders
-        </p>
+        <p class="checkout-subtitle">Your previous orders</p>
 
         <div id="order-history-list"></div>
 
@@ -1504,7 +1272,6 @@ document.body.appendChild(orderHistoryModal);
 
 
 function displayOrderHistory() {
-
     const list = document.getElementById("order-history-list");
 
     if (orderHistory.length === 0) {
@@ -1516,28 +1283,18 @@ function displayOrderHistory() {
         <div class="order-history-card">
 
             <h3>Order #${escapeHTML(order.id)}</h3>
-
             <p>${escapeHTML(order.date)}</p>
 
             <p>
                 <strong>Items:</strong>
-                ${order.items.reduce(
-                    (total, item) => total + item.quantity,
-                    0
-                )}
+                ${order.items.reduce((total, item) => total + item.quantity, 0)}
             </p>
 
-            <p>
-                <strong>Total:</strong>
-                ₹${order.total}
-            </p>
+            <p><strong>Total:</strong> ₹${order.total}</p>
 
-            <div class="order-status">
-                ● ${escapeHTML(order.status)}
-            </div>
+            <div class="order-status">● ${escapeHTML(order.status)}</div>
 
             <details>
-
                 <summary>View Order Details</summary>
 
                 <ul>
@@ -1549,11 +1306,7 @@ function displayOrderHistory() {
                     `).join("")}
                 </ul>
 
-                <p>
-                    <strong>Payment:</strong>
-                    ${escapeHTML(order.payment)}
-                </p>
-
+                <p><strong>Payment:</strong> ${escapeHTML(order.payment)}</p>
             </details>
 
             <button
@@ -1568,20 +1321,17 @@ function displayOrderHistory() {
     `).join("");
 }
 
-
 orderHistoryButton.addEventListener("click", () => {
-
     displayOrderHistory();
 
-    cartModal.style.display = "none";
+    if (cartModal) cartModal.style.display = "none";
+
     orderHistoryModal.style.display = "flex";
 });
-
 
 document.getElementById("close-order-history").addEventListener("click", () => {
     orderHistoryModal.style.display = "none";
 });
-
 
 orderHistoryModal.addEventListener("click", event => {
     if (event.target === orderHistoryModal) {
@@ -1593,7 +1343,6 @@ orderHistoryModal.addEventListener("click", event => {
 /* 22. PLACE ORDER */
 
 document.getElementById("checkout-form").addEventListener("submit", event => {
-
     event.preventDefault();
 
     if (cart.length === 0) {
@@ -1601,49 +1350,32 @@ document.getElementById("checkout-form").addEventListener("submit", event => {
         return;
     }
 
-    const customerName = document.getElementById("customer-name")
-        .value.trim();
-
-    const customerPhone = document.getElementById("customer-phone")
-        .value.trim();
-
-    const customerAddress = document.getElementById("customer-address")
-        .value.trim();
-
+    const customerName = document.getElementById("customer-name").value.trim();
+    const customerPhone = document.getElementById("customer-phone").value.trim();
+    const customerAddress = document.getElementById("customer-address").value.trim();
     const paymentMethod = document.getElementById("payment-method").value;
 
     const newOrder = {
         id: "CRV" + Date.now().toString().slice(-6),
-
         items: cart.map(item => ({ ...item })),
-
         total: calculateCartTotal(),
-
         date: new Date().toLocaleString("en-IN"),
-
         status: "Order Placed",
-
         payment: paymentMethod,
-
         customerName,
         customerPhone,
         customerAddress
     };
 
     orderHistory.unshift(newOrder);
-
     saveOrders();
 
-    showToast(
-        `Order placed successfully! Order ID: #${newOrder.id}`
-    );
+    showToast(`Order placed successfully! Order ID: #${newOrder.id}`);
 
     cart = [];
-
     updateCart();
 
     checkoutModal.style.display = "none";
-
     document.getElementById("checkout-form").reset();
 });
 
@@ -1657,8 +1389,8 @@ const deliveryStages = [
     "Delivered"
 ];
 
-
 function trackOrder() {
+    if (!trackingInput || !trackingMessage || !trackingResult) return;
 
     const enteredId = trackingInput.value.trim().toUpperCase();
 
@@ -1675,35 +1407,29 @@ function trackOrder() {
     );
 
     if (!foundOrder) {
-        trackingMessage.textContent =
-            "Order not found! Please check your Order ID.";
-
+        trackingMessage.textContent = "Order not found! Please check your Order ID.";
         return;
     }
 
     trackingResult.hidden = false;
 
-    document.getElementById("tracking-result-id").textContent =
-        "#" + foundOrder.id;
+    document.getElementById("tracking-result-id").textContent = "#" + foundOrder.id;
 
     let currentStage = deliveryStages.indexOf(foundOrder.status);
-
     if (currentStage < 0) currentStage = 0;
 
-    document.getElementById("tracking-status").textContent =
-        foundOrder.status;
+    document.getElementById("tracking-status").textContent = foundOrder.status;
 
     document.querySelectorAll(".tracking-step").forEach((step, index) => {
-
         step.classList.remove("completed", "active");
 
         const icon = step.querySelector(".step-icon");
 
         if (index <= currentStage) {
             step.classList.add("completed");
-            icon.textContent = "✓";
+            if (icon) icon.textContent = "✓";
         } else {
-            icon.textContent = index + 1;
+            if (icon) icon.textContent = index + 1;
         }
 
         if (index === currentStage) {
@@ -1711,85 +1437,65 @@ function trackOrder() {
         }
     });
 
-
     let extraInfo = document.getElementById("tracking-extra-info");
 
     if (!extraInfo) {
-
         extraInfo = document.createElement("div");
-
         extraInfo.id = "tracking-extra-info";
 
         trackingResult.querySelector(".tracking-order-info")
-            .insertAdjacentElement("afterend", extraInfo);
+            ?.insertAdjacentElement("afterend", extraInfo);
     }
 
     extraInfo.innerHTML = `
-        <p>
-            <strong>Customer:</strong>
-            ${escapeHTML(foundOrder.customerName)}
-        </p>
-
-        <p>
-            <strong>Total Amount:</strong>
-            ₹${foundOrder.total}
-        </p>
-
-        <p>
-            <strong>Order Date:</strong>
-            ${escapeHTML(foundOrder.date)}
-        </p>
-
-        <p>
-            <strong>Items:</strong>
-            ${foundOrder.items.length}
-        </p>
+        <p><strong>Customer:</strong> ${escapeHTML(foundOrder.customerName)}</p>
+        <p><strong>Total Amount:</strong> ₹${foundOrder.total}</p>
+        <p><strong>Order Date:</strong> ${escapeHTML(foundOrder.date)}</p>
+        <p><strong>Items:</strong> ${foundOrder.items.length}</p>
     `;
 }
 
+if (trackOrderButton) {
+    trackOrderButton.addEventListener("click", trackOrder);
+}
 
-trackOrderButton.addEventListener("click", trackOrder);
-
-
-trackingInput.addEventListener("keydown", event => {
-
-    if (event.key === "Enter") {
-        event.preventDefault();
-        trackOrder();
-    }
-});
+if (trackingInput) {
+    trackingInput.addEventListener("keydown", event => {
+        if (event.key === "Enter") {
+            event.preventDefault();
+            trackOrder();
+        }
+    });
+}
 
 
 /* 24. TRACK ORDER FROM ORDER HISTORY */
 
-document.getElementById("order-history-list")
-    .addEventListener("click", event => {
+document.getElementById("order-history-list").addEventListener("click", event => {
+    const button = event.target.closest(".track-saved-order");
+    if (!button) return;
 
-        const button = event.target.closest(".track-saved-order");
+    orderHistoryModal.style.display = "none";
 
-        if (!button) return;
-
-        orderHistoryModal.style.display = "none";
-
-        document.getElementById("track-order").scrollIntoView({
-            behavior: "smooth"
-        });
-
-        trackingInput.value = button.dataset.orderId;
-
-        trackOrder();
+    document.getElementById("track-order")?.scrollIntoView({
+        behavior: "smooth"
     });
+
+    if (trackingInput) {
+        trackingInput.value = button.dataset.orderId;
+        trackOrder();
+    }
+});
 
 
 /* 25. INITIAL SETUP */
 
 renderRestaurants();
 
-ratingFilter.value = "0";
-priceFilter.value = "all";
-cuisineFilter.value = "all";
-
-searchInput.value = "";
+if (ratingFilter) ratingFilter.value = "0";
+if (priceFilter) priceFilter.value = "all";
+if (cuisineFilter) cuisineFilter.value = "all";
+if (searchInput) searchInput.value = "";
 
 showFavoritesOnly = false;
 
@@ -1802,58 +1508,39 @@ console.log("Cravora loaded successfully!");
 /* 26. ACTIVE NAVIGATION HIGHLIGHT */
 
 document.addEventListener("DOMContentLoaded", () => {
+    const allNavLinks = document.querySelectorAll(".nav-link, .mobile-nav-link");
 
-    const allNavLinks = document.querySelectorAll(
-        ".nav-link, .mobile-nav-link"
-    );
-
-    const sections = [
-        "home",
-        "categories",
-        "restaurants",
-        "track-order"
-    ]
+    const sections = ["home", "categories", "restaurants", "track-order"]
         .map(id => document.getElementById(id))
         .filter(Boolean);
 
-
     function setActiveLink(sectionId) {
-
         allNavLinks.forEach(link => {
-
-            const isActive =
-                link.getAttribute("href") === `#${sectionId}`;
-
+            const isActive = link.getAttribute("href") === `#${sectionId}`;
             link.classList.toggle("active", isActive);
         });
     }
 
+    if (!("IntersectionObserver" in window)) return;
 
     const observer = new IntersectionObserver(entries => {
-
         const visibleSections = entries
             .filter(entry => entry.isIntersecting)
-            .sort(
-                (a, b) =>
-                    b.intersectionRatio - a.intersectionRatio
-            );
+            .sort((a, b) => b.intersectionRatio - a.intersectionRatio);
 
         if (visibleSections.length > 0) {
             setActiveLink(visibleSections[0].target.id);
         }
-
     }, {
         rootMargin: "-15% 0px -65% 0px",
         threshold: [0, 0.2, 0.5, 1]
     });
 
-
     sections.forEach(section => observer.observe(section));
 });
 
-/* =========================================
-   CRAVORA — PAGE LOADER
-========================================= */
+
+/* 27. PAGE LOADER */
 
 function hidePageLoader() {
     const loader = document.getElementById("page-loader");
@@ -1872,39 +1559,33 @@ if (document.readyState === "complete") {
 } else {
     window.addEventListener("load", hidePageLoader, { once: true });
 }
-/* CRAVORA — PAGE LOADER */
 
-function hidePageLoader() {
-    const loader = document.getElementById("page-loader");
 
-    if (loader) {
-        loader.classList.add("hidden");
+/* 28. CLOSE MODALS WITH ESCAPE KEY */
 
-        setTimeout(() => {
-            loader.remove();
-        }, 450);
-    }
-}
+document.addEventListener("keydown", event => {
+    if (event.key !== "Escape") return;
 
-if (document.readyState === "complete") {
-    hidePageLoader();
-} else {
-    window.addEventListener("load", hidePageLoader, { once: true });
-}
-/* =========================================
-   CRAVORA — SCROLL REVEAL
-========================================= */
+    closeRestaurantMenu();
+    closeRestaurantDetailsPopup();
+
+    if (cartModal) cartModal.style.display = "none";
+    checkoutModal.style.display = "none";
+    orderHistoryModal.style.display = "none";
+
+    document.body.style.overflow = "";
+});
+
+
+/* 29. SCROLL REVEAL */
 
 document.addEventListener("DOMContentLoaded", () => {
-
-    // Stop animations for users who prefer reduced motion
     const prefersReducedMotion = window.matchMedia(
         "(prefers-reduced-motion: reduce)"
     ).matches;
 
-    if (prefersReducedMotion) return;
+    if (prefersReducedMotion || !("IntersectionObserver" in window)) return;
 
-    // Elements that should reveal while scrolling
     const revealSelectors = [
         ".section-heading",
         ".category-card",
@@ -1913,35 +1594,22 @@ document.addEventListener("DOMContentLoaded", () => {
         "footer"
     ];
 
-    // Create the observer
     const revealObserver = new IntersectionObserver((entries, observer) => {
-
-        entries.forEach((entry) => {
-
+        entries.forEach(entry => {
             if (entry.isIntersecting) {
-
                 entry.target.classList.remove("reveal-pending");
                 entry.target.classList.add("reveal-visible");
-
                 observer.unobserve(entry.target);
             }
-
         });
-
     }, {
         threshold: 0.12,
         rootMargin: "0px 0px -40px 0px"
     });
 
-    // Find elements and observe them
     function observeRevealElements(container = document) {
-
-        revealSelectors.forEach((selector) => {
-
-            const elements = container.querySelectorAll(selector);
-
-            elements.forEach((element) => {
-
+        revealSelectors.forEach(selector => {
+            container.querySelectorAll(selector).forEach(element => {
                 if (
                     element.classList.contains("reveal-pending") ||
                     element.classList.contains("reveal-visible")
@@ -1951,30 +1619,48 @@ document.addEventListener("DOMContentLoaded", () => {
 
                 element.classList.add("reveal-pending");
                 revealObserver.observe(element);
-
             });
-
         });
-
     }
 
-    // Observe existing page elements
     observeRevealElements();
 
-    // Watch restaurant cards created dynamically by JavaScript
-    const restaurantGrid = document.getElementById("restaurant-grid");
+    const grid = document.getElementById("restaurant-grid");
 
-    if (restaurantGrid) {
-
+    if (grid) {
         const gridObserver = new MutationObserver(() => {
-            observeRevealElements(restaurantGrid);
+            observeRevealElements(grid);
         });
 
-        gridObserver.observe(restaurantGrid, {
+        gridObserver.observe(grid, {
             childList: true,
             subtree: true
         });
-
     }
-
 });
+
+
+/* 30. BACK TO TOP */
+
+const backToTopButton = document.getElementById("back-to-top");
+
+if (backToTopButton) {
+    window.addEventListener("scroll", () => {
+        if (window.scrollY > 400) {
+            backToTopButton.classList.add("show");
+        } else {
+            backToTopButton.classList.remove("show");
+        }
+    });
+
+    backToTopButton.addEventListener("click", () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    });
+}
+
+/* ==========================================
+   CRAVORA - SCRIPT COMPLETE
+========================================== */
